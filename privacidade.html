@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade – TazMania das APIs</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+<p><a href="./">← TazMania das APIs</a></p>
+<h1>Política de Privacidade</h1>
+<p class="muted">Última atualização: 21 de outubro de 2026</p>
+
+<p>A TazMania das APIs é uma extensão para navegadores baseados no Chromium (Chrome, Edge, Brave e Opera) que permite executar requisições HTTP para APIs escolhidas pelo próprio usuário. Esta página explica quais dados a extensão usa e o que acontece com eles.</p>
+
+<h2>Resumo</h2>
+<ul>
+<li>A extensão não coleta dados pessoais para o desenvolvedor. O desenvolvedor não tem servidor e não recebe nenhum dado.</li>
+<li>Tudo é processado e guardado no seu próprio computador, dentro do navegador.</li>
+<li>A extensão só fala com o Google se você ativar o backup no Google Drive.</li>
+</ul>
+
+<h2>Dados guardados no seu computador</h2>
+<p>Coleções, ambientes, variáveis, abas abertas, histórico, Flows, Monitors e as versões automáticas ficam no armazenamento local da extensão (IndexedDB e <code>chrome.storage</code>), no seu computador. Tokens e variáveis secretas também ficam só aí.</p>
+<p>As respostas das APIs ficam apenas na memória enquanto a aba está aberta e não são gravadas, a não ser que você as exporte ou salve. A exceção são os Monitors, que guardam localmente um resumo das últimas 50 execuções (status, tempo e, nas falhas, até 400 caracteres da resposta) para você ver o que falhou.</p>
+<p>Você pode apagar esses dados a qualquer momento pela própria extensão ou removendo a extensão do navegador.</p>
+
+<h2>Requisições para APIs</h2>
+<p>A extensão só envia as requisições que você configurou, para os endereços que você informou. Ela não injeta scripts em sites, não lê o conteúdo das suas abas, não captura cookies e não monitora sua navegação.</p>
+
+<h2>Backup no Google Drive (opcional)</h2>
+<p>Se você ativar o backup no Google Drive, a extensão pede sua autorização pela tela de consentimento do Google e usa apenas o escopo <code>https://www.googleapis.com/auth/drive.file</code>. Com ele, a extensão só consegue ver e alterar os arquivos que ela mesma criou no seu Drive (a pasta "TazMania das APIs" e os arquivos de backup). Ela não vê nem altera nenhum outro arquivo seu.</p>
+<ul>
+<li><strong>O que é acessado:</strong> o token de acesso concedido pelo Google, o e-mail da conta conectada (para mostrar com qual conta você está conectado) e os arquivos de backup criados pela extensão.</li>
+<li><strong>Como é usado:</strong> para enviar, listar, restaurar e apagar versões do seu backup no seu próprio Drive, quando você pede ou no envio automático que você escolheu.</li>
+<li><strong>Onde fica:</strong> o backup fica no seu Google Drive. O token fica só no navegador e não é enviado a mais ninguém.</li>
+<li><strong>Compartilhamento:</strong> nenhum dado do Google é compartilhado com o desenvolvedor ou com terceiros, vendido ou usado para publicidade.</li>
+<li><strong>Credenciais:</strong> por padrão, usuários, senhas, tokens, clientId, secret e variáveis secretas não entram no backup. Só entram se você marcar essa opção, depois de confirmar um aviso.</li>
+</ul>
+<p>Você pode desconectar o Google Drive na própria extensão e revogar o acesso a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<p>O uso e a transferência, para qualquer outro aplicativo, de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+
+<h2>Backup em arquivo</h2>
+<p>O backup exportado em arquivo fica onde você salvar. Por padrão ele sai sem credenciais. Se você incluí-las, o arquivo é criptografado com uma senha escolhida por você.</p>
+
+<h2>Mudanças nesta política</h2>
+<p>Se esta política mudar, a nova versão será publicada nesta página com a data atualizada.</p>
+
+<h2>Contato</h2>
+<p>Dúvidas sobre privacidade: <a href="mailto:rodrigoperuzzo2013@gmail.com">rodrigoperuzzo2013@gmail.com</a>.</p>
+</main>
+</body>
+</html>
